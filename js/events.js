@@ -16,7 +16,14 @@ function submitIt() {
   });
 }
 
-
+function pressIt() {
+  document.addEventListener('keydown', function(e) {
+    const key = e.key;
+    if (key = 'g') {
+      alert('You pressed the G key!');
+    }
+  });
+}
 
 $(document).ready(function(){
   getIt()
